@@ -1,0 +1,29 @@
+{
+    "name": "Event-Driven Architecture",
+    "image": "event-driven.png",
+    "nodes": [
+        {"name": "Event Producer", "shape": "box", "color": "lightblue"},
+        {"name": "Message Broker", "shape": "invhouse", "color": "lightpink"},
+        {"name": "Event Consumer 1", "shape": "ellipse", "color": "orange"},
+        {"name": "Event Consumer 2", "shape": "ellipse", "color": "orange"}
+    ],
+    "edges": [
+        {"source": "Event Producer", "target": "Message Broker", "style": "solid"},
+        {"source": "Message Broker", "target": "Event Consumer 1", "style": "solid"},
+        {"source": "Message Broker", "target": "Event Consumer 2", "style": "solid"}
+    ],
+    "resources": [  
+        {
+            "title": "Understanding Event-Driven Architecture",
+            "url": "https://www.redhat.com/en/topics/integration/what-is-event-driven-architecture"
+        },
+        {
+            "title": "Building Event-Driven Applications",
+            "url": "https://aws.amazon.com/event-driven-architecture/"
+        },
+        {
+            "title": "Event-Driven Architecture Patterns",
+            "url": "https://microservices.io/patterns/data/event-driven-architecture.html"
+        }
+    ]
+}

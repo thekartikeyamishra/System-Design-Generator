@@ -1,0 +1,36 @@
+{
+    "name": "Custom Architecture",  
+    "nodes": [
+        {
+            "name": "Component A",   
+            "shape": "box",         
+            "color": "lightblue"     
+        },
+        {
+            "name": "Component B", 
+            "shape": "ellipse", 
+            "color": "orange"
+        }
+    ],
+    "edges": [
+        {
+            "source": "Component A",  
+            "target": "Component B",  
+            "style": "solid"         
+        }
+    ],
+    "resources": [
+        {
+            "title": "Research the Specific Components in Your Design",
+            "url": "https://www.google.com/search?q=information+about+ARCHITECTURE_COMPONENT" 
+        },
+        {
+            "title": "Explore Architectural Design Patterns",
+            "url": "https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/"
+        },
+        {
+            "title": "Ask for Help on Online Forums or Communities",
+            "url": "https://stackoverflow.com/" 
+        }
+    ]
+}

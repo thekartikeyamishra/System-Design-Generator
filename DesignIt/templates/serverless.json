@@ -1,0 +1,31 @@
+{
+    "name": "Serverless Architecture",
+    "image": "serverless.png",
+    "nodes": [
+        {"name": "API Gateway", "shape": "diamond", "color": "lightgreen"},
+        {"name": "Lambda Function 1", "shape": "ellipse", "color": "orange"},
+        {"name": "Lambda Function 2", "shape": "ellipse", "color": "orange"},
+        {"name": "DynamoDB", "shape": "cylinder", "color": "lightcoral"},
+        {"name": "S3 Bucket", "shape": "cylinder", "color": "lightblue"}
+    ],
+    "edges": [
+        {"source": "API Gateway", "target": "Lambda Function 1", "style": "dashed"},
+        {"source": "API Gateway", "target": "Lambda Function 2", "style": "dashed"},
+        {"source": "Lambda Function 1", "target": "DynamoDB", "style": "solid"},
+        {"source": "Lambda Function 2", "target": "S3 Bucket", "style": "solid"}
+    ],
+    "resources": [
+        {
+            "title": "Serverless Architecture: What It Is & How It Works",
+            "url": "https://www.datadoghq.com/knowledge-center/serverless-architecture/"
+        },
+        {
+            "title": "Understanding serverless architectures - AWS Documentation",
+            "url": "https://docs.aws.amazon.com/whitepapers/latest/optimizing-enterprise-economics-with-serverless/understanding-serverless-architectures.html"
+        },
+        {
+            "title": "An Introduction to Serverless Architecture - DigitalOcean",
+            "url": "https://www.digitalocean.com/resources/article/serverless-architecture"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "name": "Layered Architecture",
+    "image": "layered.png",
+    "nodes": [
+        {"name": "Presentation Layer", "shape": "box", "color": "lightblue"},
+        {"name": "Business Logic Layer", "shape": "ellipse", "color": "purple"},
+        {"name": "Data Access Layer", "shape": "cylinder", "color": "lightcoral"}
+    ],
+    "edges": [
+        {"source": "Presentation Layer", "target": "Business Logic Layer", "style": "solid"},
+        {"source": "Business Logic Layer", "target": "Data Access Layer", "style": "solid"}
+    ],
+    "resources": [
+        {
+            "title": "Layered Architecture Pattern",
+            "url": "https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch01.html"
+        },
+        {
+            "title": "N-tier Application Architecture",
+            "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier"
+        },
+        {
+            "title": "The Clean Architecture",
+            "url": "https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html"
+        }
+    ]
+}

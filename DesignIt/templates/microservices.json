@@ -1,0 +1,36 @@
+{
+    "name": "Microservices Architecture",
+    "image": "microservices.png",
+    "nodes": [
+        {"name": "API Gateway", "shape": "diamond", "color": "lightgreen"},
+        {"name": "User Service", "shape": "ellipse", "color": "orange"},
+        {"name": "Product Service", "shape": "ellipse", "color": "orange"},
+        {"name": "Order Service", "shape": "ellipse", "color": "orange"},
+        {"name": "User DB", "shape": "cylinder", "color": "lightcoral"},
+        {"name": "Product DB", "shape": "cylinder", "color": "lightcoral"},
+        {"name": "Order DB", "shape": "cylinder", "color": "lightcoral"}
+    ],
+    "edges": [
+        {"source": "API Gateway", "target": "User Service", "style": "dashed"},
+        {"source": "API Gateway", "target": "Product Service", "style": "dashed"},
+        {"source": "API Gateway", "target": "Order Service", "style": "dashed"},
+        {"source": "User Service", "target": "User DB", "style": "solid"},
+        {"source": "Product Service", "target": "Product DB", "style": "solid"},
+        {"source": "Order Service", "target": "Order DB", "style": "solid"}
+    ],
+    "resources": [
+        {
+            "title": "Microservices.io",
+            "url": "https://microservices.io/"
+        },
+        {
+            "title": "Building Microservices: Designing Fine-Grained Systems (book)",
+            "url": "https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358/"
+        },
+        {
+            "title": "Microservices Tutorial: A Comprehensive Guide",
+            "url": "https://www.simplilearn.com/tutorials/microservices-tutorial"
+        }
+    ]
+}
+

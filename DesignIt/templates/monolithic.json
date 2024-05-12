@@ -1,0 +1,27 @@
+{
+    "name": "Monolithic Architecture",
+    "image": "monolithic.png",
+    "nodes": [
+        {"name": "User Interface", "shape": "box", "color": "lightblue"},
+        {"name": "Business Logic", "shape": "ellipse", "color": "purple"},
+        {"name": "Database", "shape": "cylinder", "color": "lightcoral"}
+    ],
+    "edges": [
+        {"source": "User Interface", "target": "Business Logic", "style": "solid"},
+        {"source": "Business Logic", "target": "Database", "style": "solid"}
+    ],
+    "resources": [
+        {
+            "title": "Monolithic Architecture: What It Is and Why It Still Matters",
+            "url": "https://www.atlassian.com/microservices/microservices-vs-monolith"
+        },
+        {
+            "title": "When to Use a Monolithic Architecture",
+            "url": "https://martinfowler.com/bliki/MonolithFirst.html"
+        },
+        {
+            "title": "Monolithic vs. Microservices: Choosing the Right Architecture",
+            "url": "https://www.redhat.com/en/topics/microservices/what-are-microservices"
+        }
+    ]
+}
